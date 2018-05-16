@@ -68,7 +68,7 @@ class ProfileTab extends Component {
             return(
                 <View key={index} style={[{width:(width)/ 3}, {height: (height) / 3}, index % 3 !== 0 ? {paddingLeft:2}: {paddingLeft:0}, {marginBottom:2}
                 ]}>
-                    <Image style={{flex:1, width:undefined, height:undefined}} source={image}/>
+                    <Image style={{flex:1,alignSelf: "stretch", width:undefined, height:undefined}} source={image}/>
                 </View>
             )
         }))
